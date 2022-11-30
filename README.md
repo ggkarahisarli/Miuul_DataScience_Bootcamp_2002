@@ -1,60 +1,43 @@
 # Miuul DataScience Bootcamp 2002
-A collection of applications from Miuul Data Science & Machine Learning Bootcamp
+***
+A collection of applications from *Miuul Data Science & Machine Learning Bootcamp*
+***
+**1. Python Programming for Data Science**
 
-Python Programming for Data Science
+    - Environment Settings
+    - Data Structures
+    - Functions
+    - Conditions
+    - Loops
+    - Comprehension
+    - Numpy and Pandas   
+    - Advanced Exploratory Data Analysis (EDA)
+    
+**2. CRM Analytics**
 
-Çalışma Ortamı Ayarları
+    - CRM Analytics
+    - RFM Analysis
+    - Customer Lifetime Value
+    - Customer Lifetime Value Estimation
 
-Veri Yapıları
+**3. Measurement Problems**
 
-Fonksiyonlar
+    - Rating Products
+    - Sorting Products
+    - Sorting Reviews
+    - AB Testing
+    
+**4. Recommendation Systems**
 
-Koşullar
+    - Association Rule Learning
+    - Content Based Recommendation
+    - Item Based Collaborative Filtering
+    - User Based Collaborative Filtering
+    - Model Based Matrix Factorization
 
-Döngüler
+**5. Feature Engineering**
 
-Comprehension
-
-Python ile Veri Analizi (Numpy Pandas)
-
-CRM Analytics
-
-CRM Analitiği
-
-RFM Analizi
-
-Müşteri Yaşam Boyu Değeri
-
-Müşteri Yaşam Boyu Değeri Tahmini
-
-Measurement Problems
-
-Rating Products
-
-Sorting Products
-
-Sorting Reviews
-
-AB Testing
-
-Recommendation Systems
-
-Association Rule Learning
-
-Content Based Recommendation
-
-Item Based Collaborative Filtering
-
-User Based Collaborative Filtering
-
-Model Based Matrix Factorization
-
-Feature Engineering
-
-Outliers
-
-Missing Values
-
-Encoding Scaling
-
-Feature Extraction
+    - Outliers
+    - Missing Values
+    - Encoding Scaling
+    - Feature Extraction
