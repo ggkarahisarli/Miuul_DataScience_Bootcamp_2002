@@ -41,3 +41,8 @@ A collection of applications from *Miuul Data Science & Machine Learning Bootcam
     - Missing Values
     - Encoding Scaling
     - Feature Extraction
+
+## Resources
+- [Miuul & VBO Data Scientist Bootcamp](https://bootcamp.veribilimiokulu.com/bootcamp-programlari/veri-bilimci-yetistirme-programi/)
+- Sarkar, D., Bali, R., & Sharma, T. (2018). Practical machine learning with python. A Problem-Solvers Guide To Building Real-World Intelligent Systems. Berkely: Apress.
+- Joshi, P. (2016). Python machine learning cookbook. Packt Publishing Ltd.
