@@ -47,3 +47,4 @@ A collection of real-word projects on real data sets from *Miuul Data Science & 
 - [Miuul & VBO Data Scientist Bootcamp](https://bootcamp.veribilimiokulu.com/bootcamp-programlari/veri-bilimci-yetistirme-programi/)
 - Sarkar, D., Bali, R., & Sharma, T. (2018). Practical machine learning with python. A Problem-Solvers Guide To Building Real-World Intelligent Systems. Berkely: Apress.
 - Joshi, P. (2016). Python machine learning cookbook. Packt Publishing Ltd.
+- Bruce, P., Bruce, A., & Gedeck, P. (2020). Practical statistics for data scientists: 50+ essential concepts using R and Python. O'Reilly Media.
