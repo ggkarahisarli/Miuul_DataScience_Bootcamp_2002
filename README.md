@@ -1,7 +1,8 @@
 # Miuul DataScience Bootcamp 2002
 ***
-A collection of applications from *Miuul Data Science & Machine Learning Bootcamp*
+A collection of real-word projects on real data sets from *Miuul Data Science & Machine Learning Bootcamp*
 ***
+
 **1. Python Programming for Data Science**
 
     - Environment Settings
