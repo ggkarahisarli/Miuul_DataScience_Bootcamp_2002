@@ -4,6 +4,17 @@ import numpy as np
 
 
 
+# Encoding
+# Label Encoding
+def label_encoder(dataframe, binary_col):
+    labelencoder = LabelEncoder()
+    dataframe[binary_col] = labelencoder.fit_transform(dataframe[binary_col])
+    return dataframe
+# One-Hot Encoding
+def one_hot_encoder(dataframe, categorical_cols, drop_first=True):
+    dataframe = pd.get_dummies(dataframe, columns=categorical_cols, drop_first=drop_first)
+    return dataframe
+
 
 
 Income  = st.number_input('Income')
