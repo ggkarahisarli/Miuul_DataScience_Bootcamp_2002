@@ -88,7 +88,7 @@ res.drop("Own_Email", axis=1, inplace=True)
 
 #Label encoder for Education
 
-import preprocessing
+from sklearn import preprocessing
 le = preprocessing.LabelEncoder()
 columns = ["Education"]
 
