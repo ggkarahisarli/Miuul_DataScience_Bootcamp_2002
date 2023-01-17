@@ -122,19 +122,20 @@ res[['Income']] = scaler.transform(res[['Income']])
 
 
 import joblib
-import pickle
-
-
+clf = joblib.load("Projects/Project/DecisionTreeModel.pkl", 'rb')
 #load model:
 
 results = np.array(res).reshape(1, -1)
-pickle_in = open("Projects/Project/DecisionTreeModel.pkl", 'rb')
-clf = pickle.load(pickle_in)
-# If button is pressed
-if st.button("Submit"):
-    # Get prediction
-    prediction = clf.predict(results)
 
-    # Output prediction
-    st.text(f"This instance is a {prediction}")
+
+# If button is pressed
+
+if st.button("Predict"):
+    prediction = clf.predict(res)
+    if prediction[0] ==1 :
+        st.success('Employee will not churn')
+    elif prediction[0] == 0:
+        st.error( 'Employee will churn')
+
+
 
