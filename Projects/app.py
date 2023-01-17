@@ -15,7 +15,8 @@ def one_hot_encoder(dataframe, categorical_cols, drop_first=True):
     dataframe = pd.get_dummies(dataframe, columns=categorical_cols, drop_first=drop_first)
     return dataframe
 
-
+# Title
+st.header("Streamlit Machine Learning App")
 
 Income  = st.number_input('Income')
 Gender = st.selectbox('Your Gender', ['M', 'F'])
@@ -121,15 +122,15 @@ res[['Income']] = scaler.transform(res[['Income']])
 
 
 import joblib
-dt = joblib.load('DecisionTreeModel.pkl')
-prediction = dt.predict(res)
-prediction = str(prediction).strip('[]')
 
-if prediction == '0':
-   prediction = "Bad"
-else:
-    prediction="Good"
-st.write("Decision Model Prediction: ",prediction)
 
-if __name__ == '__main__':
-    main()
+# If button is pressed
+if st.button("Submit"):
+    # Unpickle classifier
+    clf = joblib.load('DecisionTreeModel.pkl')
+
+    # Get prediction
+    prediction = clf.predict(res)
+
+    # Output prediction
+    st.text(f"This instance is a {prediction}")
