@@ -34,7 +34,7 @@ res = pd.DataFrame(data =
 
 
 
-res["Level_of_Experience"] = pd.cut(df_data.Employment_Date, bins=(-1,5,20,30,80), labels=("junior","experienced",
+res["Level_of_Experience"] = pd.cut(df_data.Employment_Date, bins=(0,5,20,30,80), labels=("junior","experienced",
                                                                                       "senior", "expert"))
 
 res["Is_Working"] = res["Income_Type"].replace(["Working","Commercial associate",
