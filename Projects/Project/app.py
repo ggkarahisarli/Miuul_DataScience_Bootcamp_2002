@@ -122,7 +122,7 @@ res[['Income']] = scaler.transform(res[['Income']])
 
 
 import joblib
-clf = joblib.load("Projects/Project/DecisionTreeModel.pkl", 'rb')
+clf = joblib.load("Projects/Project/DecisionTreeModel.pkl")
 #load model:
 
 results = np.array(res).reshape(1, -1)
