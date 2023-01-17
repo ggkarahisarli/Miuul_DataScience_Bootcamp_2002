@@ -7,7 +7,7 @@ import numpy as np
 
 
 Income  = st.slider("Your Income",0,1000000000000000)
-Gender = st.selectbox('Your Gender', ['M' 'F'])
+Gender = st.selectbox('Your Gender', ['M', 'F'])
 Own_Car  = st.selectbox('Are you own a car?', ['Y', 'N'])
 Own_Realty  = st.selectbox('Are you own a reality?', ['Y' ,'N'])
 Children_Count = st.slider("Number of your children",0,25)
