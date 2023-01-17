@@ -128,7 +128,7 @@ import pickle
 #load model:
 
 
-pickle_in = open("Projects/DecisionTreeModel.pkl", 'rb')
+pickle_in = open("DecisionTreeModel.pkl", 'rb')
 clf = pickle.load(pickle_in)
 # If button is pressed
 if st.button("Submit"):
@@ -137,5 +137,4 @@ if st.button("Submit"):
 
     # Output prediction
     st.text(f"This instance is a {prediction}")
-if __name__ =='__main__':
-    main()
+
