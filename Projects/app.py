@@ -6,23 +6,23 @@ import numpy as np
 
 
 
-Income  = int(st.text_input('Income'))
+Income  = st.number_input('Income')
 Gender = st.selectbox('Your Gender', ['M', 'F'])
 Own_Car  = st.selectbox('Are you own a car?', ['Y', 'N'])
 Own_Realty  = st.selectbox('Are you own a reality?', ['Y' ,'N'])
-Children_Count = int(st.text_input('Children Count'))
+Children_Count = st.number_input('Children Count')
 Education  = st.selectbox('Education type', ['Higher education' ,'Secondary / secondary special' ,
                                      'Incomplete higher' ,'Lower secondary',
                                      'Academic degree'])
 Family_Status = st.selectbox('Family status',  ['Civil marriage', 'Married' 'Single / not married' ,'Separated', 'Widow'])
 Housing_Type = st.selectbox('Housing type', ['Rented apartment' ,'House / apartment',  'Municipal apartment', 'With parents', 'Co-op apartment' ,'Office apartment'])
 
-Age = int(st.text_input('Age'))
-Employment_Date = int(st.text_input('Years of working'))
+Age = st.number_input('Age')
+Employment_Date = st.number_input('Years of working')
 Own_Work_Phone  = st.selectbox('Are you own a work phone?', ['Y', 'N'])
 Own_Phone  = st.selectbox('Are you own a phone?', ['Y', 'N'])
 Own_Email = st.selectbox('Are you own an email?', ['Y', 'N'])
-Family_Member_Count = int(st.text_input('Family Count'))
+Family_Member_Count = st.number_input('Family Count')
 Income_Type = st.selectbox('Income Type', ['Working', 'Commercial associate', 'Pensioner' ,
                                       'State servant', 'Student'])
 
