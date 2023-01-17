@@ -127,11 +127,8 @@ import pickle
 
 #load model:
 
-from pathlib import Path
 
-pkl_path = Path(__file__).parents[1] / "DecisionTreeModel.pkl"
-
-pickle_in = open(pkl_path, 'rb')
+pickle_in = open("Projects/DecisionTreeModel.pkl", 'rb')
 clf = pickle.load(pickle_in)
 # If button is pressed
 if st.button("Submit"):
