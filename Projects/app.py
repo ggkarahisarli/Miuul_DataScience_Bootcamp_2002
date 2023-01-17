@@ -120,7 +120,7 @@ scaler = StandardScaler().fit(res[['Income']])
 res[['Income']] = scaler.transform(res[['Income']])
 
 
-
+import joblib
 dt = joblib.load('DecisionTreeModel.pkl')
 prediction = dt.predict(res)
 prediction = str(prediction).strip('[]')
