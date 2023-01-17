@@ -127,13 +127,13 @@ import pickle
 
 #load model:
 
-
+results = np.array(res).reshape(1, -1)
 pickle_in = open("Projects/Project/DecisionTreeModel.pkl", 'rb')
 clf = pickle.load(pickle_in)
 # If button is pressed
 if st.button("Submit"):
     # Get prediction
-    prediction = clf.predict(res)[0]
+    prediction = clf.predict(results)
 
     # Output prediction
     st.text(f"This instance is a {prediction}")
