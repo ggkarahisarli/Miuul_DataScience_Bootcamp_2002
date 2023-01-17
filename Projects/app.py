@@ -96,6 +96,7 @@ for col in columns:
     res[col] = le.fit_transform(res[col])
     print(le.classes_)
 
+from sklearn.preprocessing import OneHotEncoder
 # One-Hot Encoding for Level_of_Experince, Age_Cat, Household_Size
 ohe_cols = [col for col in res.columns if 20 >= res[col].nunique() >= 2]
 df_ohe = one_hot_encoder(res, ohe_cols)
