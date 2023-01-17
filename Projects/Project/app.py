@@ -133,7 +133,7 @@ clf = pickle.load(pickle_in)
 # If button is pressed
 if st.button("Submit"):
     # Get prediction
-    prediction = clf.predict(res)
+    prediction = clf.predict(res)[0]
 
     # Output prediction
     st.text(f"This instance is a {prediction}")
