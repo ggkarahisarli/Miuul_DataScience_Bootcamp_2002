@@ -138,3 +138,5 @@ if st.button("Submit"):
     # Output prediction
     st.text(f"This instance is a {prediction}")
 
+if __name__ == "__main__":
+    main()
