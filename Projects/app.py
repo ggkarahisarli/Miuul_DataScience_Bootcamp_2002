@@ -122,15 +122,18 @@ res[['Income']] = scaler.transform(res[['Income']])
 
 
 import joblib
+import pickle
 
 
+#load model:
+
+clf = pickle.load(open('DecisionTreeModel.pkl', 'rb'))
 # If button is pressed
 if st.button("Submit"):
-    # Unpickle classifier
-    clf = joblib.load("DecisionTreeModel.pkl")
-
     # Get prediction
     prediction = clf.predict(res)
 
     # Output prediction
     st.text(f"This instance is a {prediction}")
+if __name__ =='__main__':
+    main()
