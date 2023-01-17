@@ -76,7 +76,6 @@ res["Household_Size"] = res["Children_Count"]\
 
 #Time to drop feature which are useless
 res.drop("Income_Type", axis=1, inplace=True)
-res.drop("Experience", axis=1, inplace=True)
 res.drop("Employment_Date", axis=1, inplace=True)
 res.drop("Family_Status", axis=1, inplace=True)
 res.drop("Age", axis=1, inplace=True)
