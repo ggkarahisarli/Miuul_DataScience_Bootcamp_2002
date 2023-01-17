@@ -127,7 +127,7 @@ import joblib
 # If button is pressed
 if st.button("Submit"):
     # Unpickle classifier
-    clf = joblib.load("Projects/DecisionTreeModel.pkl")
+    clf = joblib.load("DecisionTreeModel.pkl")
 
     # Get prediction
     prediction = clf.predict(res)
